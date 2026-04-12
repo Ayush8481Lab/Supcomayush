@@ -13,7 +13,7 @@ def get_token_with_spdc():
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         # We pass the spdc cookie here to prove we are a logged-in user
-        "Cookie": f"spdc={SPDC_COOKIE}"
+        "Cookie": f"SP_DC={SPDC_COOKIE}"
     }
     
     response = requests.get(url, headers=headers)
